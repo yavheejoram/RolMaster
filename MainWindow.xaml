@@ -1,0 +1,8 @@
+<Window x:Class="RolMaster.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="RolMaster — Windows 1.0" Width="1250" Height="800" MinWidth="900" MinHeight="600" WindowStartupLocation="CenterScreen">
+<Grid><Grid.ColumnDefinitions><ColumnDefinition Width="220"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+<Border Background="#202027" BorderBrush="#6A5139" BorderThickness="0,0,1,0"><DockPanel Margin="14">
+<StackPanel DockPanel.Dock="Top"><TextBlock Text="ROLMASTER" FontSize="25" FontWeight="Bold" Foreground="#D1A76D" Margin="8,18,0,3"/><TextBlock Text="WINDOWS 1.0" Foreground="#AFA5A0" Margin="9,0,0,26"/>
+<Button Content="Campañas" Click="Campaigns_Click"/><Button Content="Personajes" Click="Characters_Click"/><Button Content="Aventuras" Click="Adventures_Click"/><Button Content="Mapas" Click="Maps_Click"/><Button Content="Mesa del Director" Click="Director_Click"/><Button Content="Biblioteca" Click="Library_Click"/><Button Content="Copias de seguridad" Click="Backup_Click"/></StackPanel>
+<TextBlock DockPanel.Dock="Bottom" Text="Almacenamiento local · SQLite" TextWrapping="Wrap" Foreground="#9B9087" Margin="8" VerticalAlignment="Bottom"/></DockPanel></Border>
+<Grid Grid.Column="1" Margin="22"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions><TextBlock x:Name="PageTitle" Text="Campañas" FontSize="28" FontWeight="SemiBold" Foreground="#D1A76D" Margin="0,0,0,18"/><ContentControl Grid.Row="1" x:Name="PageHost"/></Grid>
+</Grid></Window>
